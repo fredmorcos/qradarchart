@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent):
   srand(QTime::currentTime().msec());
 
   for (int i = 0; i < 5; i++) {
-    QString name = "foo %1";
+    QString name = "Property %1";
     m_radar->addProperty(name.arg(i), rand() % 100);
   }
 
